@@ -18,8 +18,14 @@ docker login
 ## How to run the queries
 
 ```
-$ docker compose up -d
-$ docker compose logs python-client
+docker compose rm -f
+docker compose up -d --build
+docker compose up python-client
+```
+
+
+expected output from the python-client container:
+```
 [+] Running 2/2
  ✔ Container python-postgresql-example-db-1             Running                                                                                                                        0.0s
  ✔ Container python-postgresql-example-python-client-1  Started                                                                                                                        0.0s
