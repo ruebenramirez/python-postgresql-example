@@ -4,9 +4,11 @@
 
 ## make sure you have a way to run docker containers locally with docker compose
 
-For instance, install docker desktop - https://www.docker.com/products/docker-desktop/
+For instance, install docker desktop - [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 
 ## login to docker hub so you can download docker container images
+
+setup an account on [https://hub.docker.com/](https://hub.docker.com/)
 
 on the command line run:
 ```
