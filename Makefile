@@ -1,5 +1,6 @@
 
 run-sql:
-	#sudo docker compose build
-	sudo docker compose up -d --build
-	sudo docker compose logs python-client
+	docker compose rm -f
+	docker compose up --build
+	docker compose logs python-client
+	docker compose down -v
