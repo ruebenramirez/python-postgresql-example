@@ -9,7 +9,7 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY db .
+COPY db/* .
 COPY query_data.py .
 
 CMD ["python3", "query_data.py"]
