@@ -38,17 +38,6 @@ def seed_data(conn):
         conn.rollback()
 
 
-def query_users(conn):
-    try:
-        cur = conn.cursor()
-        cur.execute("SELECT * FROM users")
-        rows = cur.fetchall()
-        for row in rows:
-            print(row)
-    except psycopg2.Error as e:
-        print("Error querying users:", e)
-
-
 def query_data(conn):
 	try:
 		cur = conn.cursor()
